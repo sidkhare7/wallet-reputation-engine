@@ -1,0 +1,15 @@
+{
+  "db_name": "PostgreSQL",
+  "query": "UPDATE communities SET community_score = $1, last_updated_time = NOW() WHERE id = $2",
+  "describe": {
+    "columns": [],
+    "parameters": {
+      "Left": [
+        "Numeric",
+        "Text"
+      ]
+    },
+    "nullable": []
+  },
+  "hash": "551c44522c06ca94dbd0da601a9321eb93ad6c7cb85b95ab01316f1e137db66e"
+}

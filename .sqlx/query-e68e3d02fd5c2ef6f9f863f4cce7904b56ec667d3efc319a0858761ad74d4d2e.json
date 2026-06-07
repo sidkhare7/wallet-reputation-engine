@@ -1,0 +1,80 @@
+{
+  "db_name": "PostgreSQL",
+  "query": "\n        UPDATE communities\n        SET \n            merkle_root = COALESCE($1, merkle_root),\n            merkle_proofs = COALESCE($2, merkle_proofs),\n            last_updated_time = $3,\n            holder_count = $5\n        WHERE address = $4\n                             RETURNING id, name, img_url, address, chain, merkle_root, merkle_proofs, last_updated_time, holder_count,\n                community_score as \"community_score: _\"\n        ",
+  "describe": {
+    "columns": [
+      {
+        "ordinal": 0,
+        "name": "id",
+        "type_info": "Text"
+      },
+      {
+        "ordinal": 1,
+        "name": "name",
+        "type_info": "Text"
+      },
+      {
+        "ordinal": 2,
+        "name": "img_url",
+        "type_info": "Text"
+      },
+      {
+        "ordinal": 3,
+        "name": "address",
+        "type_info": "Text"
+      },
+      {
+        "ordinal": 4,
+        "name": "chain",
+        "type_info": "Text"
+      },
+      {
+        "ordinal": 5,
+        "name": "merkle_root",
+        "type_info": "Bytea"
+      },
+      {
+        "ordinal": 6,
+        "name": "merkle_proofs",
+        "type_info": "Jsonb"
+      },
+      {
+        "ordinal": 7,
+        "name": "last_updated_time",
+        "type_info": "Timestamptz"
+      },
+      {
+        "ordinal": 8,
+        "name": "holder_count",
+        "type_info": "Int8"
+      },
+      {
+        "ordinal": 9,
+        "name": "community_score: _",
+        "type_info": "Numeric"
+      }
+    ],
+    "parameters": {
+      "Left": [
+        "Bytea",
+        "Jsonb",
+        "Timestamptz",
+        "Text",
+        "Int8"
+      ]
+    },
+    "nullable": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      true,
+      false,
+      true
+    ]
+  },
+  "hash": "e68e3d02fd5c2ef6f9f863f4cce7904b56ec667d3efc319a0858761ad74d4d2e"
+}

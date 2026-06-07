@@ -1,0 +1,14 @@
+{
+  "db_name": "PostgreSQL",
+  "query": "\n        UPDATE token_stats\n        SET\n            mean_duration = stats.mean_duration,\n            stddev_duration = stats.stddev_duration,\n            mean_pnl = stats.mean_pnl,\n            stddev_pnl = stats.stddev_pnl,\n            mean_value = stats.mean_value,\n            stddev_value = stats.stddev_value,\n            mean_volume = stats.mean_volume,\n            stddev_volume = stats.stddev_volume,\n            mean_buy_volume = stats.mean_buy_volume,\n            stddev_buy_volume = stats.stddev_buy_volume,\n            mean_sell_volume = stats.mean_sell_volume,\n            stddev_sell_volume = stats.stddev_sell_volume,\n            liquidity_score = stats.liquidity_score,\n            holder_weight = stats.holder_weight\n        FROM (\n            SELECT\n                tb.token_id,\n                COALESCE(AVG(\n                    CASE \n                        WHEN tb.holding_duration > 0 THEN tb.holding_duration\n                        ELSE EXTRACT(EPOCH FROM (NOW() - tb.first_bought))\n                    END\n                ), 0) as mean_duration,\n                COALESCE(NULLIF(STDDEV(\n                    CASE \n                        WHEN tb.holding_duration > 0 THEN tb.holding_duration\n                        ELSE EXTRACT(EPOCH FROM (NOW() - tb.first_bought))\n                    END\n                ), 0), 1) as stddev_duration,\n                COALESCE(AVG(tb.pnl), 0) as mean_pnl,\n                COALESCE(NULLIF(STDDEV(tb.pnl), 0), 1) as stddev_pnl,\n                COALESCE(AVG(tb.holdings_value), 0) as mean_value,\n                COALESCE(NULLIF(STDDEV(tb.holdings_value), 0), 1) as stddev_value,\n                COALESCE(AVG(tb.volume), 0) as mean_volume,\n                COALESCE(NULLIF(STDDEV(tb.volume), 0), 1) as stddev_volume,\n                COALESCE(AVG(tb.buy_volume), 0) as mean_buy_volume,\n                COALESCE(NULLIF(STDDEV(tb.buy_volume), 0), 1) as stddev_buy_volume,\n                COALESCE(AVG(tb.sell_volume), 0) as mean_sell_volume,\n                COALESCE(NULLIF(STDDEV(tb.sell_volume), 0), 1) as stddev_sell_volume,\n                COALESCE(LOG(SUM(tb.volume) + 1), 0) as liquidity_score,\n                COALESCE(LOG(COUNT(*) + 1), 1) as holder_weight\n            FROM token_balance tb\n            WHERE tb.volume > 0 \n                AND (tb.holding_duration > 600 OR EXTRACT(EPOCH FROM (NOW() - tb.first_bought)) > 600)\n            GROUP BY tb.token_id\n            LIMIT $1\n        ) as stats\n        WHERE token_stats.token_id = stats.token_id\n        ",
+  "describe": {
+    "columns": [],
+    "parameters": {
+      "Left": [
+        "Int8"
+      ]
+    },
+    "nullable": []
+  },
+  "hash": "d9f6eba9347d529cca681f1472902d8a59426f32318a358ea57b2afd6dd19e68"
+}

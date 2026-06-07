@@ -1,0 +1,14 @@
+{
+  "db_name": "PostgreSQL",
+  "query": "\n        DELETE FROM account_communities\n        WHERE community_id = (\n            SELECT id FROM communities WHERE address = $1\n        )\n        ",
+  "describe": {
+    "columns": [],
+    "parameters": {
+      "Left": [
+        "Text"
+      ]
+    },
+    "nullable": []
+  },
+  "hash": "7fb2bcc213fd565082aeceb8d54dc1a308b9fa5f6dcd1963843dfdc7e3962220"
+}

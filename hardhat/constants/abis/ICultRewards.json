@@ -1,0 +1,187 @@
+[
+    {
+        "inputs": [],
+        "name": "ADDRESS_ZERO",
+        "type": "error"
+    },
+    {
+        "inputs": [],
+        "name": "ARRAY_LENGTH_MISMATCH",
+        "type": "error"
+    },
+    {
+        "inputs": [],
+        "name": "INVALID_DEPOSIT",
+        "type": "error"
+    },
+    {
+        "inputs": [],
+        "name": "INVALID_SIGNATURE",
+        "type": "error"
+    },
+    {
+        "inputs": [],
+        "name": "INVALID_WITHDRAW",
+        "type": "error"
+    },
+    {
+        "inputs": [],
+        "name": "SIGNATURE_DEADLINE_EXPIRED",
+        "type": "error"
+    },
+    {
+        "inputs": [],
+        "name": "TRANSFER_FAILED",
+        "type": "error"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "depositor",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "to",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "bytes4",
+                "name": "reason",
+                "type": "bytes4"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "value",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "string",
+                "name": "comment",
+                "type": "string"
+            }
+        ],
+        "name": "Deposit",
+        "type": "event"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "owner",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "to",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "amount",
+                "type": "uint256"
+            }
+        ],
+        "name": "Withdraw",
+        "type": "event"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "address",
+                "name": "account",
+                "type": "address"
+            }
+        ],
+        "name": "balanceOf",
+        "outputs": [
+            {
+                "internalType": "uint256",
+                "name": "",
+                "type": "uint256"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "address",
+                "name": "to",
+                "type": "address"
+            },
+            {
+                "internalType": "bytes4",
+                "name": "why",
+                "type": "bytes4"
+            },
+            {
+                "internalType": "string",
+                "name": "comment",
+                "type": "string"
+            }
+        ],
+        "name": "deposit",
+        "outputs": [],
+        "stateMutability": "payable",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "address[]",
+                "name": "recipients",
+                "type": "address[]"
+            },
+            {
+                "internalType": "uint256[]",
+                "name": "amounts",
+                "type": "uint256[]"
+            },
+            {
+                "internalType": "bytes4[]",
+                "name": "reasons",
+                "type": "bytes4[]"
+            },
+            {
+                "internalType": "string",
+                "name": "comment",
+                "type": "string"
+            }
+        ],
+        "name": "depositBatch",
+        "outputs": [],
+        "stateMutability": "payable",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "address",
+                "name": "to",
+                "type": "address"
+            },
+            {
+                "internalType": "uint256",
+                "name": "amount",
+                "type": "uint256"
+            }
+        ],
+        "name": "withdrawFor",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    }
+]

@@ -1,0 +1,15 @@
+{
+  "db_name": "PostgreSQL",
+  "query": "UPDATE token_stats SET market_cap = $1 WHERE token_id = $2",
+  "describe": {
+    "columns": [],
+    "parameters": {
+      "Left": [
+        "Numeric",
+        "Text"
+      ]
+    },
+    "nullable": []
+  },
+  "hash": "a5c7125de2760f25b45d6f90b99875601e894e6b05b7100162d85abe82a49af4"
+}

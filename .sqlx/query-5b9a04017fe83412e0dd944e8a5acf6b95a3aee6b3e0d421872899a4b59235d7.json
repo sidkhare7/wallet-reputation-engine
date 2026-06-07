@@ -1,0 +1,15 @@
+{
+  "db_name": "PostgreSQL",
+  "query": "\n                INSERT INTO diamond_hand_list (account_id, last_updated_time)\n                SELECT unnest($1::text[]), $2\n                ",
+  "describe": {
+    "columns": [],
+    "parameters": {
+      "Left": [
+        "TextArray",
+        "Timestamptz"
+      ]
+    },
+    "nullable": []
+  },
+  "hash": "5b9a04017fe83412e0dd944e8a5acf6b95a3aee6b3e0d421872899a4b59235d7"
+}

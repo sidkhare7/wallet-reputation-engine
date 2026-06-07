@@ -1,0 +1,84 @@
+{
+  "db_name": "PostgreSQL",
+  "query": "\n        INSERT INTO communities (id, name, img_url, address, chain, merkle_root, merkle_proofs, last_updated_time, holder_count)\n        VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9)\n                           RETURNING id, name, img_url, address, chain, merkle_root, merkle_proofs, last_updated_time, holder_count, \n                community_score as \"community_score: _\"\n        ",
+  "describe": {
+    "columns": [
+      {
+        "ordinal": 0,
+        "name": "id",
+        "type_info": "Text"
+      },
+      {
+        "ordinal": 1,
+        "name": "name",
+        "type_info": "Text"
+      },
+      {
+        "ordinal": 2,
+        "name": "img_url",
+        "type_info": "Text"
+      },
+      {
+        "ordinal": 3,
+        "name": "address",
+        "type_info": "Text"
+      },
+      {
+        "ordinal": 4,
+        "name": "chain",
+        "type_info": "Text"
+      },
+      {
+        "ordinal": 5,
+        "name": "merkle_root",
+        "type_info": "Bytea"
+      },
+      {
+        "ordinal": 6,
+        "name": "merkle_proofs",
+        "type_info": "Jsonb"
+      },
+      {
+        "ordinal": 7,
+        "name": "last_updated_time",
+        "type_info": "Timestamptz"
+      },
+      {
+        "ordinal": 8,
+        "name": "holder_count",
+        "type_info": "Int8"
+      },
+      {
+        "ordinal": 9,
+        "name": "community_score: _",
+        "type_info": "Numeric"
+      }
+    ],
+    "parameters": {
+      "Left": [
+        "Text",
+        "Text",
+        "Text",
+        "Text",
+        "Text",
+        "Bytea",
+        "Jsonb",
+        "Timestamptz",
+        "Int8"
+      ]
+    },
+    "nullable": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      true,
+      false,
+      true
+    ]
+  },
+  "hash": "57f9b869901d8540358b99e02597cc4dd7dd27fc42d84da0d2fdf0a4ac7a061e"
+}

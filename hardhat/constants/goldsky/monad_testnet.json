@@ -1,0 +1,62 @@
+{
+    "version": "1",
+    "name": "culttokens",
+    "abis": {
+        "airdropContract": {
+            "path": "../abis/AirdropContract.json"
+        },
+        "cultFactoryContract": {
+            "path": "../abis/CultFactory.json"
+        },
+        "cultContract": {
+            "path": "../abis/Cult.json"
+        },
+        "poolContract": {
+            "path": "../abis/uniswapV3Abis/Pool.json"
+        },
+        "cultRewardsContract": {
+            "path": "../abis/CultRewards.json"
+        }
+    },
+    "chains": [
+        "monad-testnet"
+    ],
+    "instances": [
+        {
+            "abi": "cultFactoryContract",
+            "address": "0x8E38C98bE946eC915c48408CE147BFA1911dd74E",
+            "chain": "monad-testnet",
+            "startBlock": 24214477
+        },
+        {
+            "abi": "cultContract",
+            "source": {
+                "abi": "cultFactoryContract",
+                "eventSignature": "CultTokenCreated(address,indexed address,address,string,string,string,indexed address,indexed address,address)",
+                "addressParam": "tokenAddress"
+            }
+        },
+        {
+            "abi": "poolContract",
+            "source": {
+                "abi": "cultFactoryContract",
+                "eventSignature": "CultTokenCreated(address,indexed address,address,string,string,string,indexed address,indexed address,address)",
+                "addressParam": "poolAddress"
+            }
+        },
+        {
+            "abi": "airdropContract",
+            "source": {
+                "abi": "cultFactoryContract",
+                "eventSignature": "CultTokenCreated(address,indexed address,address,string,string,string,indexed address,indexed address,address)",
+                "addressParam": "airdropContract"
+            }
+        },
+        {
+            "abi": "cultRewardsContract",
+            "address": "0x7580846804345DE237Bd074f5242a2df4A096625",
+            "chain": "monad-testnet",
+            "startBlock": 24214477
+        }
+    ]
+}

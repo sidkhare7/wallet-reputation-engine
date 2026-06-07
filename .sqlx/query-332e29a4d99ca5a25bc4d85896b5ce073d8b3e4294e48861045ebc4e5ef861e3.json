@@ -1,0 +1,12 @@
+{
+  "db_name": "PostgreSQL",
+  "query": "\n        UPDATE token_balance \n        SET\n            duration_z = (\n                CASE \n                    WHEN token_balance.holding_duration > 0 THEN token_balance.holding_duration\n                    ELSE EXTRACT(EPOCH FROM (NOW() - token_balance.first_bought))\n                END - ts.mean_duration\n            ) / ts.stddev_duration,\n            pnl_z = (token_balance.pnl - ts.mean_pnl) / ts.stddev_pnl,\n            value_z = (token_balance.holdings_value - ts.mean_value) / ts.stddev_value,\n            volume_z = (token_balance.volume - ts.mean_volume) / ts.stddev_volume,\n            buy_volume_z = (token_balance.buy_volume - ts.mean_buy_volume) / ts.stddev_buy_volume,\n            sell_volume_z = (token_balance.sell_volume - ts.mean_sell_volume) / ts.stddev_sell_volume\n        FROM token_stats ts\n        WHERE token_balance.token_id = ts.token_id \n            AND token_balance.holdings_value > 0\n            AND (token_balance.holding_duration > 600 OR EXTRACT(EPOCH FROM (NOW() - token_balance.first_bought)) > 600)\n        ",
+  "describe": {
+    "columns": [],
+    "parameters": {
+      "Left": []
+    },
+    "nullable": []
+  },
+  "hash": "332e29a4d99ca5a25bc4d85896b5ce073d8b3e4294e48861045ebc4e5ef861e3"
+}

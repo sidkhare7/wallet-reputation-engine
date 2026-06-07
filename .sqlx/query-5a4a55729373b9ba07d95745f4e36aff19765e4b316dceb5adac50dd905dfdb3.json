@@ -1,0 +1,14 @@
+{
+  "db_name": "PostgreSQL",
+  "query": "\n        UPDATE account \n        SET \n            diamond_hand_probability = LEAST(500, GREATEST(0, \n                ((user_scores.weighted_z_score * LN(user_scores.total_weight + 1) + 5.0) * 50.0)::int\n            )),\n            reputation = LEAST(100000, GREATEST(0,\n                ((user_scores.weighted_z_score * LN(user_scores.total_weight + 1) + 5.0) * 10000.0)::int\n            ))\n        FROM (\n            SELECT \n                tb.account_id,\n                COALESCE(SUM(\n                    (tb.duration_z * 0.45 + \n                     tb.value_z * 0.45 + \n                     tb.buy_volume_z * 0.09 + \n                     tb.sell_volume_z * 0.01) * \n                    POWER(COALESCE(ts.market_cap, 1), 0.15)\n                ) / NULLIF(SUM(POWER(COALESCE(ts.market_cap, 1), 0.15)), 0), 0) as weighted_z_score,\n                COALESCE(LN(SUM(POWER(COALESCE(ts.market_cap, 1), 0.15)) + 1), 1) as total_weight\n            FROM token_balance tb\n            JOIN token_stats ts ON tb.token_id = ts.token_id\n            WHERE tb.holdings_value > 0\n            GROUP BY tb.account_id\n            LIMIT $1\n        ) as user_scores\n        WHERE account.id = user_scores.account_id\n            AND account.slug IS NULL\n        ",
+  "describe": {
+    "columns": [],
+    "parameters": {
+      "Left": [
+        "Int8"
+      ]
+    },
+    "nullable": []
+  },
+  "hash": "5a4a55729373b9ba07d95745f4e36aff19765e4b316dceb5adac50dd905dfdb3"
+}

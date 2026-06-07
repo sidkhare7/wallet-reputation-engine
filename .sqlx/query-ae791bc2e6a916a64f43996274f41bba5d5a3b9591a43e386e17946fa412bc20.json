@@ -1,0 +1,86 @@
+{
+  "db_name": "PostgreSQL",
+  "query": "\n        SELECT \n            id, slug, referral_code, diamond_hand_probability, reputation,\n            referrer_id, total_referrals, fee_collected::TEXT,\n            twitter, discord, tokens_created, tokens_migrated\n        FROM account\n        WHERE slug IS NULL  \n        ORDER BY reputation DESC\n        LIMIT 100\n        ",
+  "describe": {
+    "columns": [
+      {
+        "ordinal": 0,
+        "name": "id",
+        "type_info": "Text"
+      },
+      {
+        "ordinal": 1,
+        "name": "slug",
+        "type_info": "Text"
+      },
+      {
+        "ordinal": 2,
+        "name": "referral_code",
+        "type_info": "Text"
+      },
+      {
+        "ordinal": 3,
+        "name": "diamond_hand_probability",
+        "type_info": "Int4"
+      },
+      {
+        "ordinal": 4,
+        "name": "reputation",
+        "type_info": "Int4"
+      },
+      {
+        "ordinal": 5,
+        "name": "referrer_id",
+        "type_info": "Text"
+      },
+      {
+        "ordinal": 6,
+        "name": "total_referrals",
+        "type_info": "Int4"
+      },
+      {
+        "ordinal": 7,
+        "name": "fee_collected",
+        "type_info": "Text"
+      },
+      {
+        "ordinal": 8,
+        "name": "twitter",
+        "type_info": "Text"
+      },
+      {
+        "ordinal": 9,
+        "name": "discord",
+        "type_info": "Text"
+      },
+      {
+        "ordinal": 10,
+        "name": "tokens_created",
+        "type_info": "Int4"
+      },
+      {
+        "ordinal": 11,
+        "name": "tokens_migrated",
+        "type_info": "Int4"
+      }
+    ],
+    "parameters": {
+      "Left": []
+    },
+    "nullable": [
+      false,
+      true,
+      true,
+      false,
+      true,
+      true,
+      true,
+      null,
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  "hash": "ae791bc2e6a916a64f43996274f41bba5d5a3b9591a43e386e17946fa412bc20"
+}

@@ -1,0 +1,119 @@
+[
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "factoryAddress",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "tokenCreator",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "protocolFeeRecipient",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "string",
+                "name": "tokenURI",
+                "type": "string"
+            },
+            {
+                "indexed": false,
+                "internalType": "string",
+                "name": "name",
+                "type": "string"
+            },
+            {
+                "indexed": false,
+                "internalType": "string",
+                "name": "symbol",
+                "type": "string"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "tokenAddress",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "poolAddress",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "airdropContract",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "bytes32[]",
+                "name": "merkle_roots",
+                "type": "bytes32[]"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "total_amount",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "total_airdrop_recipient_count",
+                "type": "uint256"
+            }
+        ],
+        "name": "CultTokenCreated",
+        "type": "event"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "address",
+                "name": "_tokenCreator",
+                "type": "address"
+            },
+            {
+                "internalType": "string",
+                "name": "_tokenURI",
+                "type": "string"
+            },
+            {
+                "internalType": "string",
+                "name": "_name",
+                "type": "string"
+            },
+            {
+                "internalType": "string",
+                "name": "_symbol",
+                "type": "string"
+            },
+            {
+                "internalType": "uint160",
+                "name": "sqrtPriceX96_WETH_0",
+                "type": "uint160"
+            },
+            {
+                "internalType": "uint160",
+                "name": "sqrtPriceX96_TOKEN_0",
+                "type": "uint160"
+            }
+        ],
+        "name": "deploy",
+        "outputs": [],
+        "stateMutability": "payable",
+        "type": "function"
+    }
+]

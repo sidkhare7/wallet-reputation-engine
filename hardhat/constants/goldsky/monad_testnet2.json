@@ -1,0 +1,29 @@
+{
+    "version": "1",
+    "name": "culttokens",
+    "abis": {
+        "cultContract": {
+            "path": "../abis/CultV2.json"
+        },
+        "poolContract": {
+            "path": "../uniswapV3Abis/Pool.json"
+        }
+    },
+    "chains": [
+        "monad-testnet"
+    ],
+    "instances": [
+        {
+            "abi": "cultContract",
+            "address": "0xAbF39775d23c5B6C0782f3e35B51288bdaf946e2",
+            "chain": "monad-testnet",
+            "startBlock": 28621102
+        },
+        {
+            "abi": "poolContract",
+            "address": "0x9D950CeBb5118756b13BA635d0d853494ED9c950",
+            "chain": "monad-testnet",
+            "startBlock": 28621102
+        }
+    ]
+}

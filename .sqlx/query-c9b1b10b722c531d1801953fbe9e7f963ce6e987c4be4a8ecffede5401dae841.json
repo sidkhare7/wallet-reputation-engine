@@ -1,0 +1,34 @@
+{
+  "db_name": "PostgreSQL",
+  "query": "\n        SELECT user_id, global_rank, reputation\n        FROM account_reputation_rankings\n        WHERE user_id = $1\n        ",
+  "describe": {
+    "columns": [
+      {
+        "ordinal": 0,
+        "name": "user_id",
+        "type_info": "Text"
+      },
+      {
+        "ordinal": 1,
+        "name": "global_rank",
+        "type_info": "Int8"
+      },
+      {
+        "ordinal": 2,
+        "name": "reputation",
+        "type_info": "Int4"
+      }
+    ],
+    "parameters": {
+      "Left": [
+        "Text"
+      ]
+    },
+    "nullable": [
+      true,
+      true,
+      true
+    ]
+  },
+  "hash": "c9b1b10b722c531d1801953fbe9e7f963ce6e987c4be4a8ecffede5401dae841"
+}

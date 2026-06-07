@@ -1,0 +1,20 @@
+/target
+.env
+/node_modules
+hardhat/node_modules
+*.ipynb
+.venv
+.DS_Store
+
+# SSH keys
+render
+render.pub
+
+# Local data / scratch files
+output.csv
+todo.txt
+temp.js
+token_buy_events.json
+token_contracts.csv
+token_creation_data.json
+data_analysis/*.csv

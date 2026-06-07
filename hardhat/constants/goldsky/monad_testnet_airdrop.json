@@ -1,0 +1,62 @@
+{
+    "version": "1",
+    "name": "culttokens",
+    "abis": {
+        "airdropContract": {
+            "path": "../abis/AirdropContract.json"
+        },
+        "cultFactoryContract": {
+            "path": "../abis/CultFactory.json"
+        },
+        "cultContract": {
+            "path": "../abis/Cult.json"
+        },
+        "poolContract": {
+            "path": "../uniswapV3Abis/Pool.json"
+        },
+        "cultRewardsContract": {
+            "path": "../abis/CultRewards.json"
+        }
+    },
+    "chains": [
+        "monad-testnet"
+    ],
+    "instances": [
+        {
+            "abi": "cultFactoryContract",
+            "address": "0x9043A90fCeCe9061f139dBF56AA11F4f57427a98",
+            "chain": "monad-testnet",
+            "startBlock": 28987368
+        },
+        {
+            "abi": "cultContract",
+            "source": {
+                "abi": "cultFactoryContract",
+                "eventSignature": "CultTokenCreated(address,indexed address,address,string,string,string,indexed address,indexed address,address,bytes32[],uint256,uint256)",
+                "addressParam": "tokenAddress"
+            }
+        },
+        {
+            "abi": "poolContract",
+            "source": {
+                "abi": "cultFactoryContract",
+                "eventSignature": "CultTokenCreated(address,indexed address,address,string,string,string,indexed address,indexed address,address,bytes32[],uint256,uint256)",
+                "addressParam": "poolAddress"
+            }
+        },
+        {
+            "abi": "airdropContract",
+            "source": {
+                "abi": "cultFactoryContract",
+                "eventSignature": "CultTokenCreated(address,indexed address,address,string,string,string,indexed address,indexed address,address,bytes32[],uint256,uint256)",
+                "addressParam": "airdropContract"
+            }
+        },
+        {
+            "abi": "cultRewardsContract",
+            "address": "0xf5bE3c4cd047f4634fc1234B30342302e62f4A74",
+            "chain": "monad-testnet",
+            "startBlock": 28987368
+        }
+    ]
+}

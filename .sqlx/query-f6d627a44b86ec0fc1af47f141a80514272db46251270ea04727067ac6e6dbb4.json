@@ -1,0 +1,14 @@
+{
+  "db_name": "PostgreSQL",
+  "query": "UPDATE account SET referrer_id = NULL WHERE referrer_id = $1",
+  "describe": {
+    "columns": [],
+    "parameters": {
+      "Left": [
+        "Text"
+      ]
+    },
+    "nullable": []
+  },
+  "hash": "f6d627a44b86ec0fc1af47f141a80514272db46251270ea04727067ac6e6dbb4"
+}

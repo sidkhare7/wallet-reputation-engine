@@ -1,0 +1,19 @@
+{
+  "db_name": "PostgreSQL",
+  "query": "\n        INSERT INTO account (\n            id, slug, referral_code, diamond_hand_probability, \n            referrer_id, total_referrals, fee_collected, twitter, discord\n        )\n        VALUES ($1, $2, $3, 0, $4, 0, 0, $5, $6)\n        ",
+  "describe": {
+    "columns": [],
+    "parameters": {
+      "Left": [
+        "Text",
+        "Text",
+        "Text",
+        "Text",
+        "Text",
+        "Text"
+      ]
+    },
+    "nullable": []
+  },
+  "hash": "371319092eb2b6ecee0775e32237310eb0f929d8717e2a4fdeff790d7c2a6022"
+}

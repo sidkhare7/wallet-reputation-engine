@@ -1,0 +1,12 @@
+{
+  "db_name": "PostgreSQL",
+  "query": "\n        UPDATE account\n        SET \n            diamond_hand_probability = 0,\n            reputation = 0\n        WHERE \n            slug IS NULL \n            AND id NOT IN (SELECT DISTINCT account_id FROM token_balance WHERE holdings_value > 0)\n        ",
+  "describe": {
+    "columns": [],
+    "parameters": {
+      "Left": []
+    },
+    "nullable": []
+  },
+  "hash": "0ae41725b305901fc22d9297f265a17bd8ea6dac9bbd8b1449d84f566cc88997"
+}

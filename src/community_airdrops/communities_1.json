@@ -1,0 +1,152 @@
+[
+  {
+    "name": "CRYPTOPUNKS",
+    "address": "0xb47e3cd837ddf8e4c57f05d70ab865de6e193bbb",
+    "chain": "eth-mainnet",
+    "img_url": "https://i.seadn.io/gae/BdxvLseXcfl57BiuQcQYdJ64v-aI8din7WPk0Pgo3qQFhAUH-B6i-dCqqc_mCkRIzULmwzwecnohLhrcH8A9mpWIZqA7ygc52Sr81hE?w=500&auto=format"
+  },
+  {
+    "name": "PudgyPenguins",
+    "address": "0xbd3531da5cf5857e7cfaa92426877b022e612cf8",
+    "chain": "eth-mainnet",
+    "img_url": "https://i.seadn.io/s/raw/files/cdf489fb69fd11886b468c0f7ff1376c.png?w=500&auto=format"
+  },
+  {
+    "name": "BoredApeYachtClub",
+    "address": "0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d",
+    "chain": "eth-mainnet",
+    "img_url": "https://i.seadn.io/gae/Ju9CkWtV-1Okvf45wo8UctR-M9He2PjILP0oOvxE89AyiPPGtrR3gysu1Zgy0hjd2xKIgjJJtWIc0ybj4Vd7wv8t3pxDGHoJBzDB?w=500&auto=format"
+  },
+  {
+    "name": "Azuki",
+    "address": "0xed5af388653567af2f388e6224dc7c4b3241c544",
+    "chain": "eth-mainnet",
+    "img_url": "https://i.seadn.io/gae/H8jOCJuQokNqGBpkBN5wk1oZwO7LM8bNnrHCaekV2nKjnCqw6UB5oaH8XyNeBDj6bA_n1mjejzhFQUP3O1NfjFLHr3FOaeHcTOOT?w=500&auto=format"
+  },
+  {
+    "name": "Doodles",
+    "address": "0x8a90cab2b38dba80c64b7734e58ee1db38b8992e",
+    "chain": "eth-mainnet",
+    "img_url": "https://i.seadn.io/s/raw/files/e663a85a2900fdd4bfe8f34a444b72d3.jpg?w=500&auto=format"
+  },
+  {
+    "name": "World Of Women",
+    "address": "0xe785e82358879f061bc3dcac6f0444462d4b5330",
+    "chain": "eth-mainnet",
+    "img_url": "https://i.seadn.io/gcs/files/8604de2d9aaec98dd389e3af1b1a14b6.gif?w=500&auto=format"
+  },
+  {
+    "name": "Cool Cats",
+    "address": "0x1a92f7381b9f03921564a437210bb9396471050c",
+    "chain": "eth-mainnet",
+    "img_url": "https://i.seadn.io/gae/LIov33kogXOK4XZd2ESj29sqm_Hww5JSdO7AFn5wjt8xgnJJ0UpNV9yITqxra3s_LMEW1AnnrgOVB_hDpjJRA1uF4skI5Sdi_9rULi8?w=500&auto=format"
+  },
+  {
+    "name": "Moonbirds",
+    "address": "0x23581767a106ae21c074b2276d25e5c3e136a68b",
+    "chain": "eth-mainnet",
+    "img_url": "https://i.seadn.io/gcs/files/4bce6187fea476154b311dafaf327c89.png?w=500&auto=format"
+  },
+  {
+    "name": "MutantApeYachtClub",
+    "address": "0x60e4d786628fea6478f785a6d7e704777c86a7c6",
+    "chain": "eth-mainnet",
+    "img_url": "https://i.seadn.io/gae/lHexKRMpw-aoSyB1WdFBff5yfANLReFxHzt1DOj_sg7mS14yARpuvYcUtsyyx-Nkpk6WTcUPFoG53VnLJezYi8hAs0OxNZwlw6Y-dmI?w=500&auto=format"
+  },
+  {
+    "name": "CloneX",
+    "address": "0x49cf6f5d44e70224e2e23fdcdd2c053f30ada28b",
+    "chain": "eth-mainnet",
+    "img_url": "https://i.seadn.io/gae/XN0XuD8Uh3jyRWNtPTFeXJg_ht8m5ofDx6aHklOiy4amhFuWUa0JaR6It49AH8tlnYS386Q0TW_-Lmedn0UET_ko1a3CbJGeu5iHMg?w=500&auto=format"
+  },
+  {
+    "name": "Meebits",
+    "address": "0x7bd29408f11d2bfc23c34f18275bbf23bb716bc7",
+    "chain": "eth-mainnet",
+    "img_url": "https://i.seadn.io/gcs/files/2d036c8c2bed042a1588622c3173677f.png?w=500&auto=format"
+  },
+  {
+    "name": "Otherdeed",
+    "address": "0x34d85c9cdeb23fa97cb08333b511ac86e1c4e258",
+    "chain": "eth-mainnet",
+    "img_url": "https://i.seadn.io/gae/yIm-M5-BpSDdTEIJRt5D6xphizhIdozXjqSITgK4phWq7MmAU3qE7Nw7POGCiPGyhtJ3ZFP8iJ29TFl-RLcGBWX5qI4-ZcnCPcsY4zI?w=500&auto=format"
+  },
+  {
+    "name": "Art Blocks",
+    "address": "0xa7d8d9ef8d8ce8992df33d8b8cf4aebabd5bd270",
+    "chain": "eth-mainnet",
+    "img_url": "https://i.seadn.io/gcs/files/fd5e8fa6bb4e39cddcdb4c9a0b685c5e.png?w=500&auto=format"
+  },
+  {
+    "name": "VeeFriends",
+    "address": "0xa3aee8bce55beea1951ef834b99f3ac60d1abeeb",
+    "chain": "eth-mainnet",
+    "img_url": "https://i.seadn.io/s/raw/files/7122f3d83a38c2ed824550c7f73b7e69.jpg?w=500&auto=format"
+  },
+  {
+    "name": "BoredApeKennelClub",
+    "address": "0xba30e5f9bb24caa003e9f2f0497ad287fdf95623",
+    "chain": "eth-mainnet",
+    "img_url": "https://i.seadn.io/gcs/files/c4dfc6be4d9c5d4f073de2efe181416a.jpg?w=500&auto=format"
+  },
+  {
+    "name": "Milady",
+    "address": "0x5af0d9827e0c53e4799bb226655a1de152a425a5",
+    "chain": "eth-mainnet",
+    "img_url": "https://i.seadn.io/gae/a_frplnavZA9g4vN3SexO5rrtaBX_cBTaJYcgrPtwQIqPhzgzUendQxiwUdr51CGPE2QyPEa1DHnkW1wLrHAv5DgfC3BP-CWpFq6BA?w=500&auto=format"
+  },
+  {
+    "name": "goblintown",
+    "address": "0xbce3781ae7ca1a5e050bd9c4c77369867ebc307e",
+    "chain": "eth-mainnet",
+    "img_url": "https://i.seadn.io/gae/cb_wdEAmvry_noTfeuQzhqKpghhZWQ_sEhuGS9swM03UM8QMEVJrndu0ZRdLFgGVqEPeCUzOHGTUllxug9U3xdvt0bES6VFdkRCKPqg?w=500&auto=format"
+  },
+  {
+    "name": "Loot",
+    "address": "0xff9c1b15b16263c61d017ee9f65c50e4ae0113d7",
+    "chain": "eth-mainnet",
+    "img_url": "https://i.seadn.io/gae/g-NFUWjS4IGgym8PHBxyhg5-G_B4x-IHgPKRkxo00JQFE3LOd-95yU2uhrokITVmV7KHEav6OMfAhfJ4roC5hwP-0tI9dMRd9wQLdw?w=500&auto=format"
+  },
+  {
+    "name": "Nouns",
+    "address": "0x9c8ff314c9bc7f6e59a9d9225fb22946427edc03",
+    "chain": "eth-mainnet",
+    "img_url": "https://i.seadn.io/gae/vfYB4RarIqixy2-wyfP4lIdK6fsOT8uNrmKxvYCJdjdRwAMj2ZjC2zTSxL-YKky0s-4Pb6eML7ze3Ouj54HrpUlfSWx52xF_ZK2TYw?w=500&auto=format"
+  },
+  {
+    "name": "Cryptoadz",
+    "address": "0x1cb1a5e65610aeff2551a50f76a87a7d3fb649c6",
+    "chain": "eth-mainnet",
+    "img_url": "https://i.seadn.io/gae/iofetZEyiEIGcNyJKpbOafb_efJyeo7QOYnTog8qcQJhqoBU-Vu9l3lXidZhXOAdu6dj4fzWW6BZDU5vLseC-K03rMMu-_j2LvwcbHo?w=500&auto=format"
+  },
+  {
+    "name": "Invisible Friends",
+    "address": "0x59468516a8259058bad1ca5f8f4bff190d30e066",
+    "chain": "eth-mainnet",
+    "img_url": "https://i.seadn.io/gae/lW22aEwUE0IqGaYm5HRiMS8DwkDwsdjPpprEqYnBqo2s7gSR-JqcYOjU9LM6p32ujG_YAEd72aDyox-pdCVK10G-u1qZ3zAsn2r9?w=500&auto=format"
+  },
+  {
+    "name": "DEGEN TOONZ",
+    "address": "0x19b86299c21505cdf59ce63740b240a9c822b5e4",
+    "chain": "eth-mainnet",
+    "img_url": "https://i.seadn.io/gae/bLRdXEC6KIRmFAWBAgppvqeYQUVojbsGzIJJGfyH-WWF57iqOOlZu-1I0v0GYyrG8C-p-sVjpCMOZMFw0oVExilWzJTDbOfLeKhl1w?w=500&auto=format"
+  },
+  {
+    "name": "DeadFellaz",
+    "address": "0x2acab3dea77832c09420663b0e1cb386031ba17b",
+    "chain": "eth-mainnet",
+    "img_url": "https://i.seadn.io/gae/seJEwLWJP3RAXrxboeG11qbc_MYrxwVrsxGH0s0qxvF68hefOjf5qrPSKkIknUTYzfvinOUPWbYBdM8VEtGEE980Qv2ti_GGd86OWQ?w=500&auto=format"
+  },
+  {
+    "name": "mfer",
+    "address": "0x79fcdef22feed20eddacbb2587640e45491b757f",
+    "chain": "eth-mainnet",
+    "img_url": "https://i.seadn.io/gae/J2iIgy5_gmA8IS6sXGKGZeFVZwhldQylk7w7fLepTE9S7ICPCn_dlo8kypX8Ju0N6wvLVOKsbP_7bNGd8cpKmWhFQmqMXOC8q2sOdqw?w=500&auto=format"
+  },
+  {
+    "name": "Sappy Seals",
+    "address": "0x364c828ee171616a39897688a831c2499ad972ec",
+    "chain": "eth-mainnet",
+    "img_url": "https://i.seadn.io/gcs/files/11570389cac190891fea96fe285cbf01.png?w=500&auto=format"
+  }
+]

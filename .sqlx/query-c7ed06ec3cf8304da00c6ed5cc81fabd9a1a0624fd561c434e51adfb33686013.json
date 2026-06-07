@@ -1,0 +1,15 @@
+{
+  "db_name": "PostgreSQL",
+  "query": "\n                INSERT INTO account_communities (account_id, community_id)\n                SELECT unnest($1::text[]), $2\n                ON CONFLICT (account_id, community_id) DO NOTHING\n                ",
+  "describe": {
+    "columns": [],
+    "parameters": {
+      "Left": [
+        "TextArray",
+        "Text"
+      ]
+    },
+    "nullable": []
+  },
+  "hash": "c7ed06ec3cf8304da00c6ed5cc81fabd9a1a0624fd561c434e51adfb33686013"
+}

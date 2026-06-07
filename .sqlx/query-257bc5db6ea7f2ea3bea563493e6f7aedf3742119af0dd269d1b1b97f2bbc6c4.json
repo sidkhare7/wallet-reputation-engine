@@ -1,0 +1,15 @@
+{
+  "db_name": "PostgreSQL",
+  "query": "\n                UPDATE airdrop_recipients\n                SET claimed = TRUE\n                WHERE account_id = $1 AND token_airdrop_id IN (\n                    SELECT id FROM token_airdrops WHERE token_id = $2\n                )\n                ",
+  "describe": {
+    "columns": [],
+    "parameters": {
+      "Left": [
+        "Text",
+        "Text"
+      ]
+    },
+    "nullable": []
+  },
+  "hash": "257bc5db6ea7f2ea3bea563493e6f7aedf3742119af0dd269d1b1b97f2bbc6c4"
+}

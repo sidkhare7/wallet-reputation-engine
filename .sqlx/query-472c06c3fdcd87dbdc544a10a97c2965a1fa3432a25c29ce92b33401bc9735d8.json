@@ -1,0 +1,50 @@
+{
+  "db_name": "PostgreSQL",
+  "query": "\n        SELECT name, img_url, chain, merkle_root, holder_count, community_score FROM communities\n        ",
+  "describe": {
+    "columns": [
+      {
+        "ordinal": 0,
+        "name": "name",
+        "type_info": "Text"
+      },
+      {
+        "ordinal": 1,
+        "name": "img_url",
+        "type_info": "Text"
+      },
+      {
+        "ordinal": 2,
+        "name": "chain",
+        "type_info": "Text"
+      },
+      {
+        "ordinal": 3,
+        "name": "merkle_root",
+        "type_info": "Bytea"
+      },
+      {
+        "ordinal": 4,
+        "name": "holder_count",
+        "type_info": "Int8"
+      },
+      {
+        "ordinal": 5,
+        "name": "community_score",
+        "type_info": "Numeric"
+      }
+    ],
+    "parameters": {
+      "Left": []
+    },
+    "nullable": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      true
+    ]
+  },
+  "hash": "472c06c3fdcd87dbdc544a10a97c2965a1fa3432a25c29ce92b33401bc9735d8"
+}

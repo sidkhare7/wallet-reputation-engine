@@ -1,0 +1,22 @@
+{
+  "db_name": "PostgreSQL",
+  "query": "SELECT AVG(a.diamond_hand_probability) as avg_probability\n         FROM account a\n         JOIN account_communities ac ON a.id = ac.account_id\n         WHERE ac.community_id = $1",
+  "describe": {
+    "columns": [
+      {
+        "ordinal": 0,
+        "name": "avg_probability",
+        "type_info": "Numeric"
+      }
+    ],
+    "parameters": {
+      "Left": [
+        "Text"
+      ]
+    },
+    "nullable": [
+      null
+    ]
+  },
+  "hash": "71ddb699cf3876ca169ab6111112154710877fc2f64c345ebab46cc18f8c4b04"
+}
