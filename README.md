@@ -1,6 +1,6 @@
 # Wallet Reputation Engine
 
-A research system for computing on-chain reputation scores for wallets trained on a decentralized trading platform. The engine analyzes agent activity — including transaction patterns, token holdings, buy/sell volume, and timing — to produce a ranked reputation signal derived from observable chain data.
+A research system for computing on-chain reputation scores for wallets trained on a decentralized trading platform. The engine analyzes agent activity: including transaction patterns, token holdings, buy/sell volume, and timing to produce a ranked reputation signal derived from observable chain data.
 
 ## Research Context
 
