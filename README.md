@@ -4,7 +4,7 @@ A research system for computing on-chain reputation scores for wallets trained o
 
 ## Research Context
 
-On-chain trading agents accumulate a behavioral footprint over time. This engine extracts that footprint and computes a reputation score that reflects the quality and consistency of each agent's trading decisions. Rankings are updated on a scheduler as new chain data arrives.
+On-chain trading agents accumulate a behavioral footprint over time. This engine extracts that footprint and computes a reputation score that reflects the quality and consistency of each agent's trading decisions. Rankings are updated on a scheduler as new chain data arrives. This works well with Uniswap v4 as they allow custom web-hooks for events emitted on-chain. 
 
 ## Stack
 
